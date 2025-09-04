@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restauraunt Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar"><h1>Club Announcements</h1></div>
+        <div class="container">
+            <div class="announcement" style="background-color: #FFDDC1;">
+                <h2>GDG Club Intro</h2>
+                <h3>Attend at G06 and G07</h3>
+                <p>✨ Don’t miss the chance to explore, connect, and kickstart your journey with GDG On Campus at IIIT Sri City!</p>
+                <button class="delete-announce" onclick="removeAnnouncement(event)">Delete</button>
+            </div>
+        </div>
+        <div class="popupoverlay" style="display: none;"></div>
+        <div class="popup">
+            <h2>Add Announcement</h2>
+            <form>
+                
+                <input type="text" id="title" placeholder="Title" name="title" required>
+                <input type="text" id="subtitle" placeholder="Subtitle" name="subtitle" required>
+                <textarea id="description" placeholder="Description" name="description" required></textarea>
+                <button type="submit" id="submit-button">Announce</button>
+                <button type="button" class="close-popup">Close</button>
+            </form>
+        </div>
+        <button class="add" id="addb">+</button>
+        <script src="script.js"></script>
+    </body>
+    </html>
